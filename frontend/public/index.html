@@ -12,30 +12,11 @@
     <title>Pets</title>
 </head>
 <body>
+    <script type="module" src="./scripts/home.js" defer></script>
+    <script type="module" src="./scripts/util/dom.js" defer></script>
+
     <!-- cabeçalho -->
-    <header>
-        <nav id="topbar">
-            <div class="container topbar-container">
-                <h2 id="page-title">Pet Shop</h2>
-
-                <div class="search-bar">
-                    <input class="round-container" type="search" placeholder="Pesquisar em todos os produtos">
-                    <a class="round-button search-button"><i class="bi bi-search"></i></a>
-                </div>
-
-                <ul class="topbar-buttons">
-                    <li><a class="round-button" href="#"><i class="bi bi-cart3" style="font-size: 18px;"></i> R$0,00</a></li>
-                    <li><a class="round-button" href="#">Entrar</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--banner-->
-        <div class="banner">
-            <img style="position: absolute; right: 0;" src="assets/image/banner.png">
-            <h1>compre online e<br>receba na sua loja</h1>
-            <h2>Confira os produtos</h2>
-        </div>
-    </header>
+    <header id="header"></header>
     <div class="container main-content">
         <aside class="main-content-aside">
             <div class="round-container aside-element" style="background-color: #f9f9f9;">
@@ -107,6 +88,6 @@
         </main>
     </div>
     <!-- rodapé -->
-    <footer />
+    <footer id="footer"></footer>
 </body>
 </html>

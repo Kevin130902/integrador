@@ -67,6 +67,7 @@
 .product-list {
     display: flex;
     gap: 1.6em;
+    max-width: 800px;
 }
 
 .product-container {
