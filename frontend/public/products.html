@@ -1,23 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <title>Products</title>
-</head>
-<body>
-    <script type="module" src="./scripts/products.js" defer></script>
-    <script>
-        const params = new URLSearchParams(document.location.search);
-        console.log(params);
-    </script>
+<html lang="pt-br">
 
-    <header id="header"></header>
-    <footer id="footer"></footer>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tools - Sua loja online de ferramentas e acessorios</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
+	<script type="module" src="./scripts/products.js" defer></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<main class="main-content container">
+		<h2 class=" text-container main-text">Celulares</h2>
+		<section class="products-container">
+			<aside class="filter">
+				<div class="text-container">
+					<form action="">
+						<h3>Marca</h3>
+						<ul>
+							<li><input type="checkbox" name="" id=""><label>Apple</label></li>
+							<li><input type="checkbox" name="" id=""><label>Samsung</label></li>
+							<li><input type="checkbox" name="" id=""><label>LG</label></li>
+						</ul>
+					</form>
+				</div>
+			</aside>
+			<section class="section-product-grid">
+				<!-- <div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div>
+				<div class="product-card">
+					<div>
+					<img
+						src="../images/products/cord_drill.png"
+						alt="Furadeira Eletrica"
+					/>
+					</div>
+					<div class="product-card-info-container">
+					<h2
+						class="product-card-title"
+						title="Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas incluso"
+					>
+						Parafusadeira e Furadeira de impacto Bosch 12V com kit brocas
+						incluso
+					</h2>
+					<h4 class="product-card-reference">Cod. 12345678</h4>
+					<h3 class="product-card-price">R$ 499,90</h3>
+					<h4 class="product-card-installment">
+						10x de R$ 49,90 s/juros
+					</h4>
+					</div>
+					<button class="product-card-btn">COMPRAR</button>
+				</div> -->
+			</section>
+		</section>
+	</main>
+
+	<footer id="footer"></footer>
 </body>
 </html>

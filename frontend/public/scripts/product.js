@@ -1,4 +1,3 @@
-import { loadHeader, loadFooter } from "./util/dom.js";
+import { loadBaseElements } from "./util/load.js";
 
-loadHeader();
-loadFooter();
+loadBaseElements();
