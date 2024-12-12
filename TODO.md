@@ -1,0 +1,7 @@
+- [ ] Servidor e banco
+- [ ] Páginas
+- [ ] Filtro
+- [ ] Carrinho
+- [ ] Pagamento
+- [ ] Checagem de estoque
+- [ ] Pedido feito -> XLSX e email
