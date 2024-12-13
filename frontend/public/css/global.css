@@ -3,10 +3,10 @@
 :root {
     --font: "Inter", sans-serif;
     --font-size: 16px;
-    --body: #F5F6F6;
+    --body: #eff1f5;
     --bg-color: #FFF;
-    --main-color: #263238;
-    --text-color: #000;
+    --main-color: #dd7878;
+    --text-color: #4c4f69;
 }
 
 body {

@@ -1,68 +1,74 @@
 {
     "iphone-xr-blue": {
-        "name": "iPhone XR 128 GB azul - Excelente (Recondicionado)",
+        "title": "iPhone XR 128 GB azul - Excelente (Recondicionado)",
         "category": "phone",
         "description": "Se procura um aparelho que lhe permita estar sempre em contato, este telefone iPhone XR é uma excelente opção. Você poderá se comunicar imediatamente com amigos ou com pessoas de sua família. E também, se você estiver trabalhando, conseguirá uma maior colaboração com sua equipe.",
         "brand": "apple"
     },
     "iphone-14-plus": {
-        "name": "Apple iPhone 14 Plus (128 Gb) - Estelar",
+        "title": "Apple iPhone 14 Plus (128 Gb) - Estelar",
         "category": "phone",
         "description": "Com o iPhone 14 Plus, você pensa grande na supertelona de 6,7 polegadas(1) e tem bateria para o dia todo(2). Usa o novo sistema de câmera dupla para fazer fotos espetaculares em ambientes com pouca ou muita luz. E ganha tranquilidade com a Detecção de Acidente(3), um novo recurso de segurança que liga para a emergência se você não puder.",
         "brand": "apple"
     },
     "iphone-16": {
-        "name": "Apple iPhone 16 (256 GB) - Verde-acinzentado",
+        "title": "Apple iPhone 16 (256 GB) - Verde-acinzentado",
         "category": "phone",
         "description": "iPhone 16. Novo Controle da Câmera, câmera Fusion de 48 MP, cinco cores lindas e o chip A18.",
         "brand": "apple"
     },
     "galaxy-s23": {
-        "name": "Samsung Galaxy S23 256 GB 5G Preto 8 GB RAM",
+        "title": "Samsung Galaxy S23 256 GB 5G Preto 8 GB RAM",
         "category": "phone",
         "description": "O Samsung Galaxy S23 5G é ideal para quem busca tecnologia. Ele possui o tipo de processador Octa Core, com velocidade 3.36GHz, 2.8GHz e 2GHz, tela com 6,1'', tecnologia AMOLED dinâmico 2X, resolução 2340 x 1080 (FHD+) e taxa de atualização máxima com 120 Hz.",
         "brand": "samsung"
     },
     "galaxy-s23-ultra": {
-        "name": "Samsung Galaxy S23 Ultra 5G Dual SIM 256 GB Preto 12 GB RAM",
+        "title": "Samsung Galaxy S23 Ultra 5G Dual SIM 256 GB Preto 12 GB RAM",
         "category": "phone",
         "description": "Descubra infinitas possibilidades para suas fotos com as 4 câmeras principais de sua equipe. Teste sua criatividade e jogue com iluminação, diferentes planos e efeitos para obter ótimos resultados.",
         "brand": "samsung"
     },
     "galaxy-z-flip": {
-        "name": "Celular Samsung Galaxy Z Flip 4 Dual Dobrável 128gb 5g (Recondicionado)",
+        "title": "Celular Samsung Galaxy Z Flip 4 Dual Dobrável 128gb 5g (Recondicionado)",
         "category": "phone",
         "description": "O Galaxy Z Flip é celular ideal para aqueles que tem um estilo excepcional e único, que gostam de criar e compartilhar seus conteúdos, inspirando outras pessoas através de suas histórias com singularidade de expressar ativamente seu valor.",
         "brand": "samsung"
     },
     "q6-dual-sim": {
-        "name": "LG Q6 Dual SIM 32 GB black 3 GB RAM",
+        "title": "LG Q6 Dual SIM 32 GB black 3 GB RAM",
         "category": "phone",
         "description": "Momentos únicos, capturas reais. Capture seus melhores momentos e reviva-os sempre que quiser com a câmera traseira de 13 Mpx.",
         "brand": "lg"
     },
     "macbook-pro-2020": {
-        "name": "Macbook Pro A2251 I5 10 Gen 2020 Ssd 512gb 16gb Tela Retina (Recondicionado)",
+        "title": "Macbook Pro A2251 I5 10 Gen 2020 Ssd 512gb 16gb Tela Retina (Recondicionado)",
         "category": "notebook",
         "description": "MACBOOK PRO 2020 A2251, com garantia, nota fiscal e suporte especializado OUTLET INFO, o mesmo funciona 100% dentro das especificações do fabricante.",
         "brand": "apple"
     },
     "macbook-air-m2": {
-        "name": "MacBook Air M2 (2022) 13.6\" midnight 8GB de Ram - 256GB SSD - Apple M",
+        "title": "MacBook Air M2 (2022) 13.6\" midnight 8GB de Ram - 256GB SSD - Apple M",
         "category": "notebook",
         "description": "A duração da bateria depende do uso que se dê ao produto.",
         "brand": "apple"
     },
     "galaxy-book-4": {
-        "name": "Notebook Samsung Galaxy Book4 Intel Inside U300, 8GB, 256GB SSD",
+        "title": "Notebook Samsung Galaxy Book4 Intel Inside U300, 8GB, 256GB SSD",
         "category": "notebook",
         "description": "O Galaxy Book4 NP750XGJ-KG7BR tem tela de 15,6 polegadas com resolução Full HD (1920 x 1080 px) e painel do tipo IPS, que não distorce as cores. O chassi é todo construído em metal na cor cinza, com espessura de 1,5 cm e peso de apenas 1,55 kg, oferecendo boa mobilidade para levar a qualquer lugar. O teclado tem layout ABNT2 com teclas numéricas do lado direito, sem retroiluminação. A webcam tem a boa resolução HD (720p), ideal para videoconferências.",
         "brand": "samsung"
     },
     "ipad-10": {
-        "name": "iPad Apple 10th generation 2022 A2696 10.9\" 64GB",
+        "title": "iPad Apple 10th generation 2022 A2696 10.9\" 64GB",
         "category": "tablet",
         "description": "Descubra um mundo de possibilidades com o iPad 10ª Geração! Este tablet oferece desempenho excepcional, tela vívida e recursos versáteis que te acompanham em todas as suas atividades.",
         "brand": "apple"
+    },
+    "galaxy-tab-s6": {
+        "title": "Tablet Samsung Galaxy Tab S6 Lite Wi-Fi 64GB 4GB RAM",
+        "category": "tablet",
+        "description": "A linha Tab S6 Lite traz soluções inovadoras e diversas funcionalidades para pessoas que buscam agilidade, produtividade e conectividade. Com um design estiloso e compacto, é o Tablet ideal para te acompanhar no dia a dia.",
+        "brand": "samsung"
     }
 }

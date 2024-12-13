@@ -1,35 +1,50 @@
-import { CarrouselProduct } from "./components/carrousel-product.js";
+import { loadBaseElements, loadProducts } from "./util/load.js";
 
-import { getItemInfo } from "./util/info.js";
-import { loadBaseElements } from "./util/load.js";
+const CAROUSEL_CLASS_SET = new Set(["novidades", "mais-vendidos", "promocoes"]);
+const CAROUSEL_WIDTH = 340;
 
-const CARROUSEL_CLASS_SET = new Set(["novidades", "mais-vendidos", "promocoes"]);
+function loadCarrouselMovement() {
+    document.querySelectorAll(".section-product").forEach((el) => {
+        const carousel = el.querySelector('.carrousel');
+        const prevBtn = el.querySelector(".prev");
+        const nextBtn = el.querySelector(".next");
 
-function loadCarrousels(categories) {
-    for (const category of CARROUSEL_CLASS_SET) {
-        if (category in categories) {
-            const el = document.querySelector("#" + category);
-            const names = categories[category];
+        let scroll = 0;
 
-            console.log(el, names);
+        nextBtn.addEventListener("click", () => {
+            const { scrollWidth } = carousel;
 
-            let inner = "";
+            scroll += CAROUSEL_WIDTH;
 
-            names.forEach((name) => {
-                const info = getItemInfo(name);
+            if (scroll > scrollWidth - el.offsetWidth) {
+                scroll = scrollWidth - el.offsetWidth;
+            }
 
-                inner += CarrouselProduct(info);
-            });
+            carousel.style.transform = `translateX(-${scroll}px)`;
+        });
 
-            el.innerHTML = inner;
-        }
-    }
+        prevBtn.addEventListener("click", () => {
+            scroll -= CAROUSEL_WIDTH;
+
+            if (scroll < 0) {
+                scroll = 0;
+            }
+
+            carousel.style.transform = `translateX(-${scroll}px)`;
+        });
+    });
 }
 
-fetch("../json/carrousel.json")
+fetch("../json/carousel.json")
     .then((res) => res.json())
     .then((categories) => {
-        loadCarrousels(categories);
+        return Promise.all([...CAROUSEL_CLASS_SET.values()]
+            .map((category) => {
+                const el = document.querySelector(".carrousel#" + category);
+
+                return loadProducts(el, categories[category]);
+            }));
     });
 
 loadBaseElements();
+loadCarrouselMovement();

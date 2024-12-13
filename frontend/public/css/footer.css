@@ -9,7 +9,7 @@
 
 .footer-info-card {
     width: 25.25em ;
-    padding:16px;
+    padding: 2em;
     background-color: var(--bg-color);
     border-radius: 15px;
 }
@@ -44,7 +44,6 @@
 
 .footer-nav-container {
     display: flex;
-   
 }
 
 .footer-navitem-container {
@@ -86,7 +85,7 @@
     text-align: center;
     color:var(--bg-color);
     font-size: 14px;
-    padding: 32px 0;
+    padding: 16px 0;
  }
 
  @media (max-width: 576px) {
@@ -97,7 +96,6 @@
 
     .footer-info-card {
         width: 100% ;
-        
     }
 
     .footer-social-container{

@@ -1,3 +1,29 @@
+import { Product } from "../components/product.js";
+
+import { getItemInfo } from "./info.js";
+
+export async function loadProducts(el, names) {
+	let inner = "";
+
+	for (const name of names) {
+		const info = await getItemInfo(name);
+
+		if (info) inner += Product(info);
+	}
+
+	el.innerHTML = inner;
+
+	el.querySelectorAll(".product-card-btn").forEach((btn) => {
+		btn.onclick = function() {
+			window.location.href = "./product.html?p=" + btn.id;
+		};
+	});
+}
+
+export function loadBaseElements() {
+    loadHeader();
+    loadFooter();
+}
 
 function loadHeader() {
     const el = document.getElementById("header");
@@ -135,9 +161,4 @@ function loadFooter() {
 			</div>
 		</div>
     `;
-}
-
-export function loadBaseElements() {
-    loadHeader();
-    loadFooter();
 }
