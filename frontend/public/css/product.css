@@ -108,6 +108,7 @@
     display: flex;
     justify-content: center;
     column-gap: 16px;
+    margin-top: 2.5em;
 }
 
 .quantity input{

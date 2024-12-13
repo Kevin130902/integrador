@@ -1,5 +1,6 @@
 import { loadBaseElements } from "./util/load.js";
 import { getItemInfo } from "./util/info.js";
+import { addToCart } from "./util/cart.js";
 
 const selected = new URL(window.location.href).searchParams.get("p");
 
@@ -15,6 +16,13 @@ if (selected) {
         const descriptionEl = document.querySelector(".product_description");
         descriptionEl.innerHTML = description;
 
+        const buyBtn = document.querySelector(".shop_btn");
+        buyBtn.addEventListener("click", () => {
+            const amountEl = document.getElementById("quantity");
+            addToCart(selected, Number(amountEl.value));
+
+            window.location.href = "./payment.html";
+        });
     });
 }
 
