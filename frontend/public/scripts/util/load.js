@@ -1,5 +1,6 @@
 import { Product } from "../components/product.js";
 
+import { getCart } from "./cart.js";
 import { getItemInfo } from "./info.js";
 
 export async function loadProducts(el, names) {
@@ -18,6 +19,29 @@ export async function loadProducts(el, names) {
 			window.location.href = "./product.html?p=" + btn.id;
 		};
 	});
+}
+
+export function loadComprasInfo() {
+	const subtotalEl = document.getElementById("subtotal");
+	const freteEl = document.getElementById("frete");
+	const totalEl = document.getElementById("totalCarrinho");
+
+	let subTotal = 0;
+
+	Promise.allSettled(
+		Object.entries(getCart()).map(async ([name, amount]) => {
+			const { price } = await getItemInfo(name);
+
+			subTotal += price * amount;
+		}),
+	)
+		.then(() => {
+			const frete = Number(localStorage.getItem("frete") ?? 0);
+
+			subtotalEl.innerText = "R$ " + subTotal.toFixed(2);
+			freteEl.innerText = "R$ " + frete.toFixed(2);
+			totalEl.innerHTML = "R$ " + (subTotal + frete).toFixed(2);
+		});
 }
 
 export function loadBaseElements() {
