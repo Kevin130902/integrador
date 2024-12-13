@@ -9,7 +9,7 @@ from .serializers import ProdutoSerializer
 
 @api_view(["GET"])
 def get_product(_, prod: str):
-    queryset = Produto.objects.filter(nome=prod).first()
+    queryset = Produto.objects.filter(name=prod).first()
 
     if queryset is not None:
         return Response(ProdutoSerializer(queryset).data)
